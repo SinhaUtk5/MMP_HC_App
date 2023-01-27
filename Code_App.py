@@ -108,10 +108,10 @@ if uploaded_file is not None:
     
     
     
-    T_Res_F= IRIS[:,14] 
+    T_Res_F= IRIS[:,13] 
     
-    MWC7plus_oil = ((IRIS[:,15 ]))
-    MMP = ((IRIS[:,17 ]))
+    MWC7plus_oil = ((IRIS[:,14 ]))
+    MMP = ((IRIS[:,15 ]))
     
     
     APPWeight_C7plus_Oil= MWC7plus_oil*C7_plus 
@@ -130,14 +130,14 @@ if uploaded_file is not None:
     
     
     
-    SG_calc2=((IRIS[:,16 ]))
+    SG_calc2=((IRIS[:,15 ]))
     SG_calc=np.array(SG_calc2)
     
     
     
     for index in range(0,len(SG_calc2)):
         
-        if(SG_calc2[index]==2):
+        if(SG_calc2[index]=="NA"):
             SG_calc[index]=SG_calc1[index]
      
             
