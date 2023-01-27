@@ -30,7 +30,7 @@ html_temp = """
 st.markdown(html_temp,unsafe_allow_html=True)
 
 st.header("Department of Petroleum Engineering: Interaction of Phase Behavior and Flow in Porous Media (IPBFPM) Consortium")
-st.header("Made by Utkarsh Sinha and Dr. Birol Dindoruk")
+
 st.markdown('<style>h2{color: red;}</style>', unsafe_allow_html=True)
 st.subheader("Product Description - Calculates the Minimum Miscibility Pressure (psia) for CH4 dominant hydrocarbon gas injection")
 st.subheader('Ref. - Sinha, U., Dindoruk, B., & Soliman, M. (2023). Physics guided data-driven model to estimate minimum miscibility pressure (MMP) for hydrocarbon gases. Geoenergy Science and Engineering, 211389.')
@@ -184,5 +184,6 @@ if uploaded_file is not None:
 from PIL import Image
 image = Image.open('image-uhtoday.jpg')
 st.image(image, caption='A product of University of Houston')
+st.subheader("Made by Utkarsh Sinha and Dr. Birol Dindoruk")
         
     #print('result===',result)
