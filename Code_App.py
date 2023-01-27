@@ -33,7 +33,7 @@ st.header("Department of Petroleum Engineering: Interaction of Phase Behavior an
 st.header("Made by Utkarsh Sinha and Dr. Birol Dindoruk")
 st.markdown('<style>h2{color: red;}</style>', unsafe_allow_html=True)
 st.subheader("Product Description - Calculates the Minimum Miscibility Pressure (psia) for CH4 dominant hydrocarbon gas injection")
-st.subheader('Ref. - Sinha, U., Dindoruk, B., & Soliman, M. (2023). Physics guided data-driven model to estimate minimum miscibility pressure (MMP) for hydrocarbon gases. Geoenergy Science and Engineering, 211389.)
+st.subheader('Ref. - Sinha, U., Dindoruk, B., & Soliman, M. (2023). Physics guided data-driven model to estimate minimum miscibility pressure (MMP) for hydrocarbon gases. Geoenergy Science and Engineering, 211389.')
 #st.write(df)
 pickle_in = open('finalized_MMP_HC_model2.pkl', 'rb')
 my_model= pickle.load(pickle_in)
