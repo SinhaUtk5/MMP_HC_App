@@ -34,8 +34,8 @@ st.header("Made by Utkarsh Sinha and Dr. Birol Dindoruk")
 st.markdown('<style>h2{color: red;}</style>', unsafe_allow_html=True)
 st.subheader("Product Description - Calculates the Minimum Miscibility Pressure (psia) for CH4 dominant hydrocarbon gas injection")
 #st.write(df)
-
-my_model= pickle.load(open('finalized_MMP_HC_model2.pkl', 'rb'))
+pickle_in = open('finalized_MMP_HC_model2', 'rb')
+my_model= pickle.load(pickle_in)
 # print(my_model)
 
 
