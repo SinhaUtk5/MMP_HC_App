@@ -172,7 +172,7 @@ if uploaded_file is not None:
     
     if st.button("Predict MMP (Psia)"):
         output=np.array(predict_MMP(X))
-        df.insert(18, "MMP_Pred(Psia)", output, True)
+        df.insert(17, "MMP_Pred(Psia)", output, True)
         st.write(df)
         csv = convert_df(df)
         st.download_button(
