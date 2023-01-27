@@ -181,7 +181,7 @@ if uploaded_file is not None:
              mime='text/csv',
          )
 from PIL import Image
-image = Image.open('MMP_HC_App/image-uhtoday.jpg')
+image = Image.open('image-uhtoday.jpg')
 st.image(image, caption='A product of University of Houston')
         
     #print('result===',result)
