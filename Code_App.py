@@ -35,7 +35,7 @@ st.markdown('<style>h2{color: red;}</style>', unsafe_allow_html=True)
 st.subheader("Product Description - Calculates the Minimum Miscibility Pressure (psia) for CH4 dominant hydrocarbon gas injection")
 #st.write(df)
 
-my_model= pickle.load(open('MMP_HC_App/finalized_MMP_HC_model2.pkl', 'rb'))
+my_model= pickle.load(open('finalized_MMP_HC_model2.pkl', 'rb'))
 # print(my_model)
 
 
