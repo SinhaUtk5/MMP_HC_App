@@ -3,5 +3,9 @@ pandas==1.4.4
 Pillow==9.4.0
 requests==2.28.1
 streamlit==1.15.1
-finalized_MMP_HC_model2.pkl
+pickle
+lightgbm
+statistics
+math
+
 
