@@ -111,7 +111,7 @@ if uploaded_file is not None:
     T_Res_F= IRIS[:,13] 
     
     MWC7plus_oil = ((IRIS[:,14 ]))
-    MMP = ((IRIS[:,15 ]))
+    MMP = ((IRIS[:,16 ]))
     
     
     APPWeight_C7plus_Oil= MWC7plus_oil*C7_plus 
