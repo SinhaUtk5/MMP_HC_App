@@ -36,9 +36,9 @@ st.subheader("Product Description - Calculates the Minimum Miscibility Pressure 
 # st.subheader("Download Input Template File")
 html_temp2 = """
 <div style="background-color:tomato;padding:1.5px">
-<h1 style="color:white;text-align:center;">Download Input Template </h1>
+<h1 style="color:red;text-align:center;">Download Input Template </h1>
 </div><br>"""
-st.markdown("[html_temp2](https://drive.google.com/file/d/1HNyZjobmTEBcWfk0C2cmClQfahTONrX1/view?usp=sharing)",unsafe_allow_html=True)
+st.markdown([html_temp2]+"(https://drive.google.com/file/d/1HNyZjobmTEBcWfk0C2cmClQfahTONrX1/view?usp=sharing)",unsafe_allow_html=True)
 #st.write(df)
 pickle_in = open('finalized_MMP_HC_model2.pkl', 'rb')
 my_model= pickle.load(pickle_in)
