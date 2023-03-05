@@ -37,7 +37,9 @@ st.subheader("Product Description - Calculates the Minimum Miscibility Pressure 
 st.markdown(""" <style> .font {
 font-size:50px ; font-family: 'Cooper Black'; color: #FF9633;} 
 </style> """, unsafe_allow_html=True)
-st.markdown("[Download Input Template](https://drive.google.com/file/d/1HNyZjobmTEBcWfk0C2cmClQfahTONrX1/view?usp=sharing)", unsafe_allow_html=True)
+st.markdown("[Download Input Template](https://drive.google.com/file/d/1HNyZjobmTEBcWfk0C2cmClQfahTONrX1/view?usp=sharing)", """ <style> .font {
+font-size:50px ; font-family: 'Cooper Black'; color: #FF9633;} 
+</style> """,unsafe_allow_html=True)
 
 #st.write(df)
 pickle_in = open('finalized_MMP_HC_model2.pkl', 'rb')
