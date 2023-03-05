@@ -184,7 +184,7 @@ if uploaded_file is not None:
              mime='text/csv',
          )
 st.subheader("Made by Utkarsh Sinha and Dr. Birol Dindoruk")
-st.subheader('Ref. - Sinha, U., Dindoruk, B., & Soliman, M. (2023). Physics guided data-driven model to estimate minimum miscibility pressure (MMP) for hydrocarbon gases. Geoenergy Science and Engineering, 211389.')
+st.subheader('[Ref. - Sinha, U., Dindoruk, B., & Soliman, M. (2023). Physics guided data-driven model to estimate minimum miscibility pressure (MMP) for hydrocarbon gases. Geoenergy Science and Engineering, 211389.](https://www.sciencedirect.com/science/article/abs/pii/S294989102200077X)')
 
 from PIL import Image
 image = Image.open('image-uhtoday.jpg')
