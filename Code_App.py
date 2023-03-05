@@ -34,6 +34,7 @@ st.header("Department of Petroleum Engineering: Interaction of Phase Behavior an
 st.markdown('<style>h2{color: red;}</style>', unsafe_allow_html=True)
 st.subheader("Product Description - Calculates the Minimum Miscibility Pressure (psia) for CH4 dominant hydrocarbon gas injection")
 # st.subheader("Download Input Template File")
+st.markdown('<style>h2{color: red;}</style>', unsafe_allow_html=True)
 st.markdown("[Download Input Template](https://drive.google.com/file/d/1HNyZjobmTEBcWfk0C2cmClQfahTONrX1/view?usp=sharing)",unsafe_allow_html=True)
 
 pickle_in = open('finalized_MMP_HC_model2.pkl', 'rb')
