@@ -183,8 +183,8 @@ if uploaded_file is not None:
              file_name='large_df.csv',
              mime='text/csv',
          )
-st.subheader("Made by [Utkarsh Sinha](https://www.linkedin.com/in/utkarsh-sinha-ba398b75/) and [Dr. Birol Dindoruk](https://www.petro.uh.edu/faculty/dindoruk)")
-st.subheader('[Ref. - Sinha, U., Dindoruk, B., & Soliman, M. (2023). Physics guided data-driven model to estimate minimum miscibility pressure (MMP) for hydrocarbon gases. Geoenergy Science and Engineering, 211389.](https://www.sciencedirect.com/science/article/abs/pii/S294989102200077X)')
+st.subheader("Developed by by [Utkarsh Sinha](https://www.linkedin.com/in/utkarsh-sinha-ba398b75/) and [Dr. Birol Dindoruk](https://www.petro.uh.edu/faculty/dindoruk) [ based on the work in Ref. - Sinha, U., Dindoruk, B., & Soliman, M. (2023). Physics guided data-driven model to estimate minimum miscibility pressure (MMP) for hydrocarbon gases. Geoenergy Science and Engineering, 211389.](https://www.sciencedirect.com/science/article/abs/pii/S294989102200077X)")
+#st.subheader('[Ref. - Sinha, U., Dindoruk, B., & Soliman, M. (2023). Physics guided data-driven model to estimate minimum miscibility pressure (MMP) for hydrocarbon gases. Geoenergy Science and Engineering, 211389.](https://www.sciencedirect.com/science/article/abs/pii/S294989102200077X)')
 
 from PIL import Image
 image = Image.open('image-uhtoday.jpg')
