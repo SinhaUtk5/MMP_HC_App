@@ -63,67 +63,67 @@ if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
     st.write(df)
     IRIS=np.array(df)
-    H2S = pow((IRIS[:,0 ]),1)
+    H2S = np.array(pow((IRIS[:,0 ]),1),dtype=np.float64)
     print(H2S)
-    Co2 = (IRIS[:,1 ])
-    N2 = IRIS[:,2]
+    Co2 = np.array(IRIS[:,1 ]),dtype=np.float64)
+    N2 = np.array(IRIS[:,2],dtype=np.float64)
     
-    C1 = IRIS[:,3 ]
+    C1 = np.array(IRIS[:,3 ],dtype=np.float64)
     
-    C2_C6 = IRIS[:,4 ]
+    C2_C6 = np.array(IRIS[:,4 ],dtype=np.float64)
     
-    C7_plus = pow(IRIS[:,5 ],1)
-    
-    
-    MW_Oil = IRIS[:,6 ]
+    C7_plus = np.array(pow(IRIS[:,5 ],1),dtype=np.float64)
     
     
-    
-    N2_gas = IRIS[:,7 ]
-    
-    
-    H2S_gas = IRIS[:,8 ]
-    
-    CO2_gas = IRIS[:,9 ]
-    
-    CH4_gas = IRIS[:,10 ]
-    
-    C2Plus_gas = IRIS[:,11 ]
-    
-    MWC2Plus_gas = IRIS[:,12 ]
-    
-    GAS_MW = (N2_gas*28.0134+H2S_gas*34.1+CH4_gas*16.04+CO2_gas*44.01+C2Plus_gas*MWC2Plus_gas)/100
-    
-    
-    mf_CO2=CO2_gas/100
-    mf_H2S=H2S_gas/100
-    
-    GAS_Grav=GAS_MW/28.97
-    
-    uncTC_Rank=169.2+349.5*GAS_Grav-74*GAS_Grav*GAS_Grav
-    Correction=120*(( mf_CO2+ mf_H2S)**0.9-(mf_CO2+ mf_H2S)**1.6)+15*((mf_H2S**0.5)-(mf_H2S**4))
-    TC_GAS_F = uncTC_Rank-Correction-459.67
-    
-    unc_PC=756.8-131.07*GAS_Grav-3.6*GAS_Grav*GAS_Grav
-    
-    PC_PSIA = unc_PC*(TC_GAS_F+459.67)/(uncTC_Rank-mf_H2S*(1-mf_H2S)*Correction)
+    MW_Oil = np.array(IRIS[:,6 ],dtype=np.float64)
     
     
     
-    T_Res_F= IRIS[:,13] 
-    
-    MWC7plus_oil = ((IRIS[:,14 ]))
-    MMP = ((IRIS[:,16 ]))
+    N2_gas = np.array(IRIS[:,7 ],dtype=np.float64)
     
     
-    APPWeight_C7plus_Oil= MWC7plus_oil*C7_plus 
-    Prox1=(C2_C6+H2S+Co2)/(MWC7plus_oil)/pow((( T_Res_F-32)/1.8+273),0.203)
-    Prox2=(C2Plus_gas)*(MWC2Plus_gas)/100
+    H2S_gas = np.array(IRIS[:,8 ],dtype=np.float64)
+    
+    CO2_gas = np.array(IRIS[:,9 ],dtype=np.float64)
+    
+    CH4_gas = np.array(IRIS[:,10 ],dtype=np.float64)
+    
+    C2Plus_gas = np.array(IRIS[:,11 ],dtype=np.float64)
+    
+    MWC2Plus_gas = np.array(IRIS[:,12 ],dtype=np.float64)
+    
+    GAS_MW = np.array(N2_gas*28.0134+H2S_gas*34.1+CH4_gas*16.04+CO2_gas*44.01+C2Plus_gas*MWC2Plus_gas)/100,dtype=np.float64)
+    
+    
+    mf_CO2=np.array(CO2_gas/100,dtype=np.float64)
+    mf_H2S=np.array(H2S_gas/100,dtype=np.float64)
+    
+    GAS_Grav=np.array(GAS_MW/28.97,dtype=np.float64)
+    
+    uncTC_Rank=np.array(169.2+349.5*GAS_Grav-74*GAS_Grav*GAS_Grav,dtype=np.float64)
+    Correction=np.array(120*(( mf_CO2+ mf_H2S)**0.9-(mf_CO2+ mf_H2S)**1.6)+15*((mf_H2S**0.5)-(mf_H2S**4)),dtype=np.float64)
+    TC_GAS_F = np.array(uncTC_Rank-Correction-459.67,dtype=np.float64)
+    
+    unc_PC=np.array(756.8-131.07*GAS_Grav-3.6*GAS_Grav*GAS_Grav,dtype=np.float64)
+    
+    PC_PSIA = np.array(unc_PC*(TC_GAS_F+459.67)/(uncTC_Rank-mf_H2S*(1-mf_H2S)*Correction),dtype=np.float64)
+    
+    
+    
+    T_Res_F= np.array(IRIS[:,13] ,dtype=np.float64)
+    
+    MWC7plus_oil = np.array((IRIS[:,14 ])),dtype=np.float64)
+    MMP = np.array((IRIS[:,16 ])),dtype=np.float64)
+    
+    
+    APPWeight_C7plus_Oil= MWC7plus_oil*C7_plus,dtype=np.float64 )
+    Prox1=np.array((C2_C6+H2S+Co2)/(MWC7plus_oil)/pow((( T_Res_F-32)/1.8+273),0.203),dtype=np.float64)
+    Prox2=np.array((C2Plus_gas)*(MWC2Plus_gas)/100,dtype=np.float64)
     
     correction_factor=1
     
-    SG_calc0=SG_calc0=1.106352054/(46.23006224/MWC7plus_oil+1.090283159)
-    SG_calc1=0.8 +(0.01+MWC7plus_oil)/MWC7plus_oil
+    SG_calc0=SG_calc0=np.array(1.106352054/(46.23006224/MWC7plus_oil+1.090283159)
+    SG_calc1=np.array(0.134462445+0.214592184*SG_calc0+0.703011117*SG_calc0*SG_calc0+0.010846788*np.exp(SG_calc0), ,dtype=np.float64))
     
     
 #     SG_calc1=0.134462445+0.214592184*SG_calc0+0.703011117*SG_calc0*SG_calc0+0.010846788*np.exp(SG_calc0)
@@ -133,14 +133,14 @@ if uploaded_file is not None:
     
       
     
-    SG_calc2=((IRIS[:,15 ]))
+    SG_calc2=np.array((IRIS[:,15 ]),dtype=np.float64)
     SG_calc=np.array(SG_calc2)
     
     
     
     for index in range(0,len(SG_calc2)):
         
-        if(SG_calc2[index]=="NA" or SG_calc2[index]=="Na" or SG_calc2[index]=="na"):
+        if(np.isnan(SG_calc2[index])):
             SG_calc[index]=SG_calc1[index]
      
             
