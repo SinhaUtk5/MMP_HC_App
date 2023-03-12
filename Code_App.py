@@ -127,7 +127,7 @@ if uploaded_file is not None:
     
 #     SG_calc1=0.134462445+0.214592184*SG_calc0+0.703011117*SG_calc0*SG_calc0+0.010846788*np.exp(SG_calc0)
     # SG_calc1=SG_calc0
-     SG_calc1=0.8
+      SG_calc1=0.8
     
     
       
