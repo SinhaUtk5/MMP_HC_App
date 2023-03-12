@@ -139,7 +139,7 @@ if uploaded_file is not None:
     
     for index in range(0,len(SG_calc2)):
         
-        if(SG_calc2[index]=="NA" or SG_calc2[index]=="Na" or SG_calc2[index]=="na" or SG_calc2[index]==np.nan):
+        if(SG_calc2[index]=="NA" or SG_calc2[index]=="Na" or SG_calc2[index]=="na":
             SG_calc[index]=SG_calc1[index]
      
             
