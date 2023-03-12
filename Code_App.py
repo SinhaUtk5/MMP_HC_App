@@ -123,11 +123,12 @@ if uploaded_file is not None:
     correction_factor=1
     
     SG_calc0=SG_calc0=1.106352054/(46.23006224/MWC7plus_oil+1.090283159)
+    SG_calc1=0.8
     
     
 #     SG_calc1=0.134462445+0.214592184*SG_calc0+0.703011117*SG_calc0*SG_calc0+0.010846788*np.exp(SG_calc0)
-    # SG_calc1=SG_calc0
-      SG_calc1=0.8
+#     SG_calc1=SG_calc0
+     
     
     
       
